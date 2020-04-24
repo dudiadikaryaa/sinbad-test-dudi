@@ -17,6 +17,8 @@ $ git clone https://github.com/dudiadikaryaa/sinbad-test-dudi.git
 
 After you have successfully cloned this project repository, do the following:
 
+> Don't forget to change the `.env.sample` file into `.env` before executing the command below.
+
 ```sh
 $ mvn install
 ```
