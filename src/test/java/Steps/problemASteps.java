@@ -24,6 +24,18 @@ public class problemASteps {
         problemAPages.addChildCount(childCount);
     }
 
+    //Choose Checkin Date
+    @Step
+    public void chooseCheckInDate(String checkinDate){
+       problemAPages.chooseCheckInDate(checkinDate);
+    }
+
+    //Choose Checkout Date
+    @Step
+    public void chooseCheckOutDate(String checkoutDate){
+        problemAPages.chooseCheckOutDate(checkoutDate);
+    }
+
     //Click Search Button
     @Step
     public void clickSearch(){
@@ -34,5 +46,29 @@ public class problemASteps {
     @Step
     public void assertSearchResult(String cityName){
         problemAPages.assertSearchResult(cityName);
+    }
+
+    //Filter Price High to Low
+    @Step
+    public void filterPriceHigh(){
+        problemAPages.filterPriceHigh();
+    }
+
+    //Choose Top Hotel
+    @Step
+    public void chooseTopHotel(){
+        problemAPages.chooseTopHotel();
+    }
+
+    //Choose Most Expensive Room
+    @Step
+    public void chooseMostExpRoom(){
+        problemAPages.chooseMostExpRoom();
+    }
+
+    //Assert on Checkout Booking Page
+    @Step
+    public void assertOnCheckoutBooking(){
+        problemAPages.assertOnCheckoutBooking();
     }
 }
