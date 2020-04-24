@@ -13,6 +13,7 @@
         <serenity.version>2.1.4</serenity.version>
         <serenity.cucumber4.version>2.1.2</serenity.cucumber4.version>
         <cucumber.version>4.8.1</cucumber.version>
+        <thucydides.version>0.9.228</thucydides.version>
     </properties>
 
     <dependencies>
