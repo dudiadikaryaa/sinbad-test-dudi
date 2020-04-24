@@ -29,6 +29,9 @@ public class problemAPages extends PageObject{
         element(destinationField).shouldBeVisible();
         destinationField.click();
 
+        try { Thread.sleep(3000); }
+        catch (InterruptedException io){ }
+
         element(inputCityNameField).shouldBeVisible();
         inputCityNameField.sendKeys(cityName);
 

@@ -31,7 +31,7 @@ public class problemBPages extends PageObject{
     WebElement submitLoginButton;
 
     public void userLogin(){
-        try { Thread.sleep(3000); }
+        try { Thread.sleep(10000); }
         catch (InterruptedException io){ }
 
         String email = credentials.user_email;
@@ -63,7 +63,7 @@ public class problemBPages extends PageObject{
 
         submitLoginButton.click();
 
-        try { Thread.sleep(10000); }
+        try { Thread.sleep(5000); }
         catch (InterruptedException io){ }
     }
 
@@ -206,6 +206,9 @@ public class problemBPages extends PageObject{
     WebElement submittedText;
 
     public void assertBookingSubmitted(){
+        try { Thread.sleep(5000); }
+        catch (InterruptedException io){ }
+
         element(submittedText).shouldBeVisible();
         String submitText = submittedText.getText();
 
@@ -235,6 +238,9 @@ public class problemBPages extends PageObject{
     WebElement visaDateValue;
 
     public void assertBookingInvoice(String firstName, String lastName, String phoneNumber, String visaDate, String baseCountry, String destinationCountry){
+        try { Thread.sleep(5000); }
+        catch (InterruptedException io){ }
+
         element(bookingDetailsTitle).shouldBeVisible();
 
         String firstNameText = firstNameValue.getText();
