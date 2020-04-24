@@ -80,7 +80,7 @@
                     </includes>
                     <argLine>-Xmx512m</argLine>
                     <threadCount>2</threadCount>
-                    <!--                    <parallel>classes</parallel>-->
+                    <parallel>classes</parallel>
                 </configuration>
                 <executions>
                     <execution>
