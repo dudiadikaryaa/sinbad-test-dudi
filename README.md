@@ -1,6 +1,6 @@
 # Sinbad SDET Assignment - Dudi Adikarya
 
-I decided to use Cucumber Java with Serenity for this SDET Assignment.
+I decided to use **Cucumber Java with Serenity** for this SDET Assignment.
 
 ### Prerequisites:
 
