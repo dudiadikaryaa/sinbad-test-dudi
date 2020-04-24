@@ -41,9 +41,9 @@ public class problemB {
         problemBSteps.clickSubmitButton();
     }
 
-    @And("the user fill input fields Visa booking with {word}, {word}, {word}")
-    public void userFillInputVisa(String firstName, String lastName, String phoneNumber){
-        problemBSteps.fillInputVisa(firstName, lastName, phoneNumber);
+    @And("the user fill input fields Visa booking with {word}, {word}, {word}, {word}")
+    public void userFillInputVisa(String firstName, String lastName, String phoneNumber, String emailUser){
+        problemBSteps.fillInputVisa(firstName, lastName, phoneNumber, emailUser);
     }
 
     @And("the user clicks Booking button")
@@ -61,8 +61,8 @@ public class problemB {
         problemBSteps.assertBookingSubmitted();
     }
 
-    @Then("show booking invoice data {word}, {word}, {word}, {word}")
-    public void showBookingInvoiceData(String firstName, String lastName, String phoneNumber, String visaDate){
-        problemBSteps.assertBookingInvoice(firstName, lastName, phoneNumber, visaDate);
+    @Then("show booking invoice data {word}, {word}, {word}, {word}, {word}, {word}")
+    public void showBookingInvoiceData(String firstName, String lastName, String phoneNumber, String visaDate, String baseCountry, String destinationCountry){
+        problemBSteps.assertBookingInvoice(firstName, lastName, phoneNumber, visaDate, baseCountry, destinationCountry);
     }
 }

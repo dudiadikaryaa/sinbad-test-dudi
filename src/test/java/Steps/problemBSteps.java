@@ -44,8 +44,8 @@ public class problemBSteps {
 
     //Fill Input Visa
     @Step
-    public void fillInputVisa(String firstName, String lastName, String phoneNumber){
-        problemBPages.fillInputVisa(firstName,lastName,phoneNumber);
+    public void fillInputVisa(String firstName, String lastName, String phoneNumber, String emailUser){
+        problemBPages.fillInputVisa(firstName,lastName,phoneNumber, emailUser);
     }
 
     //Click Booking Button
@@ -68,8 +68,8 @@ public class problemBSteps {
 
     //Assert Booking Invoice
     @Step
-    public void assertBookingInvoice(String firstName, String lastName, String phoneNumber, String visaDate){
-        problemBPages.assertBookingInvoice(firstName,lastName,phoneNumber,visaDate);
+    public void assertBookingInvoice(String firstName, String lastName, String phoneNumber, String visaDate, String baseCountry, String destinationCountry){
+        problemBPages.assertBookingInvoice(firstName,lastName,phoneNumber,visaDate, baseCountry, destinationCountry);
     }
 
 }
