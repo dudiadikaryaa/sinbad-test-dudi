@@ -39,7 +39,7 @@ For the **Must Have [Required]** section of the Assessment:
     @usecase_1
       Scenario Outline: Search hotel in Bandung for 2 Adults & 1 Child
         Given the user opens PHPTravels Web
-        When the user input <cityName> in destination field
+        When the user input <cityName> in destination field   #this is the parameterized code
         And the user add child field by 1
         And the user clicks Search button
         Then show search results for <cityName>
