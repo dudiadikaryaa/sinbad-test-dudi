@@ -31,7 +31,7 @@ public class problemBPages extends PageObject{
     WebElement submitLoginButton;
 
     public void userLogin(){
-        try { Thread.sleep(8000); }
+        try { Thread.sleep(3000); }
         catch (InterruptedException io){ }
 
         String email = credentials.user_email;
@@ -40,16 +40,30 @@ public class problemBPages extends PageObject{
         element(dropdownAccount).shouldBeVisible();
         dropdownAccount.click();
 
-        element(loginButton).shouldBeVisible();
+        try { Thread.sleep(2000); }
+        catch (InterruptedException io){ }
+
         loginButton.click();
 
         waitForCondition().until(ExpectedConditions.elementToBeClickable(submitLoginButton));
         element(emailInputField).shouldBeVisible();
+
+        try { Thread.sleep(2000); }
+        catch (InterruptedException io){ }
+
         emailInputField.sendKeys(email);
+
+        try { Thread.sleep(2000); }
+        catch (InterruptedException io){ }
+
         passwordInputField.sendKeys(password);
 
+        try { Thread.sleep(2000); }
+        catch (InterruptedException io){ }
+
         submitLoginButton.click();
-        try { Thread.sleep(5000); }
+
+        try { Thread.sleep(10000); }
         catch (InterruptedException io){ }
     }
 
@@ -58,6 +72,9 @@ public class problemBPages extends PageObject{
     WebElement visaButton;
 
     public void clickVisaButton(){
+        try { Thread.sleep(3000); }
+        catch (InterruptedException io){ }
+
         waitForCondition().until(ExpectedConditions.elementToBeClickable(visaButton));
         visaButton.click();
 
@@ -76,6 +93,9 @@ public class problemBPages extends PageObject{
     WebElement choosenCountryOption;
 
     public void chooseBaseCountry(String countryName){
+        try { Thread.sleep(2000); }
+        catch (InterruptedException io){ }
+
         element(chooseBaseButton).shouldBeVisible();
         chooseBaseButton.click();
 
@@ -161,6 +181,9 @@ public class problemBPages extends PageObject{
 
     //Click Booking Button
     public void clickBookingButton(){
+        try { Thread.sleep(2000); }
+        catch (InterruptedException io){ }
+
         element(bookingButton).shouldBeVisible();
         bookingButton.click();
 
